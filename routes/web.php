@@ -19,6 +19,7 @@ Route::group(['prefix' => 'app', 'namespace' => 'Project', 'as' => 'app.'], func
 
 		Route::get('/domain', 'DomainController@index')->name('domain');
 
+		Route::get('setting', 'SettingController@index')->name('setting');
 	});
 
 });

@@ -18,46 +18,31 @@
 				<ul class="nav nav-tabs" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link active show" href="#primary" data-toggle="tab" role="tab" aria-selected="false">
-							Domain Management
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#subdomain" data-toggle="tab" role="tab" aria-selected="true">
-							Subdomain
+							Application settings
 						</a>
 					</li>
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active show" id="primary" role="tabpanel">
-						<h4>Point your domain to your app</h4>
+						<h4>Configure several application specific settings for your web app.</h4>
 
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group pt-2">
-									<label for="inputEmail">Primary Domain</label>
-									<input class="form-control" id="inputEmail" type="email" placeholder="examlpe.com">
+									<label for="Webroot">Webroot</label>
+									<input class="form-control" id="Webroot" type="email" placeholder="/public">
 								</div>
-								<br>
+								<div class="form-group pt-2">
+									<label for="php">PHP Version</label>
+									<select name="php_version" class="form-control">
+										<option value="6.5">6.5</option>
+										<option value="7.0">7.0</option>
+										<option value="7.2">7.2</option>
+									</select>
+								</div>
+
+
 								<input type="submit" class="btn btn-primary" value="Submit">
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane" id="subdomain" role="tabpanel">
-						<h4>Addtional Domain</h4>
-						<div class="row">
-							<div class="col-md-4">
-							@if(true)
-								<div class="form-group pt-2">
-									<label for="inputEmail">Subdomain</label>
-									<input class="form-control" id="inputEmail" type="email" placeholder="sub.examlpe.com">
-								</div>
-								<br>
-								<input type="submit" class="btn btn-primary" value="Add Domain">
-							@else
-								<p>You don't primary domain!</p>
-								<p>Please add your primary domain first before add subdomain</p>
-
-							@endif
 							</div>
 						</div>
 					</div>

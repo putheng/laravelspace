@@ -57,7 +57,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="{{ route('app.manage.setting') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
 									<span>Application Settings</span>
 								</a>
