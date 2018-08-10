@@ -47,7 +47,7 @@
 				</td>
 				<td class="text-right">
 					<div class="btn-group btn-hspace">
-						<a class="btn btn-secondary dropdown-toggle" href="">
+						<a class="btn btn-secondary dropdown-toggle" href="{{ route('app.manage.detail') }}">
 							Manage 
 						</a>
 					</div>

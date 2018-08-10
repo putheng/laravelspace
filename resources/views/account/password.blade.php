@@ -18,44 +18,36 @@
 				<ul class="nav nav-tabs" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link active show text-uppercase" href="#primary" data-toggle="tab" role="tab" aria-selected="false">
-							Domain Management
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#subdomain" data-toggle="tab" role="tab" aria-selected="true">
-							Subdomain
+							password management
 						</a>
 					</li>
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active show" id="primary" role="tabpanel">
-						<h4>Point domain to your app</h4>
-
+						<h4>Update your password</h4>
+						<br>
 						<div class="row">
 							<div class="col-md-4">
-								<div class="form-group pt-2">
-									<label for="inputEmail">Primary Domain</label>
-									<input class="form-control" id="inputEmail" type="email" placeholder="examlpe.com">
-								</div>
-								<input type="submit" class="btn btn-primary" value="Submit">
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane" id="subdomain" role="tabpanel">
-						<h4>Addtional Domain</h4>
-						<div class="row">
-							<div class="col-md-4">
-							@if(true)
-								<div class="form-group pt-2">
-									<label for="inputEmail">Subdomain</label>
-									<input class="form-control" id="inputEmail" type="email" placeholder="sub.examlpe.com">
-								</div>
-								<input type="submit" class="btn btn-primary" value="Add Domain">
-							@else
-								<p>You don't primary domain!</p>
-								<p>Please add your primary domain first before add subdomain</p>
 
-							@endif
+								<div class="form-group pt-2">
+									<label for="inputCPassword">Current password</label>
+									<input class="form-control form-control-sm" id="inputCPassword" type="password">
+								</div>
+
+								<div class="form-group">
+									<label for="inputNPassword">New password</label>
+									<input class="form-control form-control-sm" id="inputNPassword" type="password">
+								</div>
+
+								<div class="form-group">
+									<label for="inputNPasswordA">New password again</label>
+									<input class="form-control form-control-sm is-invalid" id="inputNPasswordA" type="password">
+									
+									<p class="text-danger">Error here</p>
+									
+								</div>
+
+								<input type="submit" class="btn btn-primary" value="Update">
 							</div>
 						</div>
 					</div>

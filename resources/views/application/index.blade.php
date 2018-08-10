@@ -22,6 +22,29 @@
 							<input class="form-control form-control-sm" id="inputDescription" type="text" placeholder="Make a short description of your app">
 						</div>
 					</div>
+
+					<div class="col-md-4">
+						<div class="form-group pt-2">
+							<label for="php">Select your application</label>
+							<select name="php_version" class="form-control form-control-sm">
+								<option value="7.0">Laravel</option>
+								<option value="6.5">WordPress</option>
+								<option value="7.2">Custom PHP App</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="form-group pt-2">
+							<label for="php">PHP Version</label>
+							<select name="php_version" class="form-control form-control-sm">
+								<option value="6.5">6.5</option>
+								<option value="7.0">7.0</option>
+								<option value="7.2">7.2</option>
+							</select>
+						</div>
+					</div>
+
 				</div>
 
 				<div class="row pricing-tables">
@@ -103,7 +126,7 @@
 				<p>Please select your app size. You can always scale your app size whenever required</p>
 			</div>
 			<div class="card-header card-header-contrast card-header-featured">
-				<a href="{{ route('app.lists') }}" class="btn btn-success btn-lg">Create App</a>
+				<a href="#" class="btn btn-success btn-lg">Create App</a>
 			</div>
 		</div>
 	</div>

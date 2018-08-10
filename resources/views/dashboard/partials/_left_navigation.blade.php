@@ -19,9 +19,9 @@
 							</a>
 						</li>
 						@if(true)
-							<li class="divider">Application Management</li>
+							<li class="divider">Application</li>
 							<li>
-								<a href="#">
+								<a href="{{ route('app.manage.detail') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
 									<span>Access Details</span>
 								</a>
@@ -29,29 +29,29 @@
 							<li>
 								<a href="{{ route('app.manage.domain') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
-									<span>Domain Management</span>
+									<span>Domain</span>
 								</a>
 							</li>
 							<li>
 								<a href="#">
 									<i class="icon mdi mdi-chart-donut"></i>
-									<span>Cron Job Management</span>
+									<span>Cron Job</span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="{{ route('app.manage.ssl.index') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
 									<span>SSL Certificate</span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="{{ route('app.manage.deploy') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
-									<span>Deploy Via Github</span>
+									<span>SSH</span>
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="{{ route('app.manage.backup') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
 									<span>Backup</span>
 								</a>
@@ -63,15 +63,15 @@
 								</a>
 							</li>
 						@endif
-						<li class="divider">Account</li>
+						<li class="divider">Settings</li>
 						<li>
 							<a href="#">
 								<i class="icon mdi mdi-settings"></i>
-								<span>Settings</span>
+								<span>Account</span>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="{{ route('dashboard.password') }}">
 								<i class="icon mdi mdi-lock"></i>
 								<span>Password</span>
 							</a>
@@ -80,6 +80,11 @@
 							<a href="{{ route('dashboard.billing') }}">
 								<i class="icon mdi mdi-money-box"></i>
 								<span>Billing</span>
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('dashboard.billing') }}">
+								<span class="icon mdi mdi-power"></span>Logout
 							</a>
 						</li>
 					</ul>

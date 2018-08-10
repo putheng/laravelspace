@@ -10,3 +10,11 @@
 .no-margin{
 	margin: 0 !important;
 }
+
+.hidden{
+	display: none !important;
+}
+
+input[type="radio"]:checked+label {
+	background: #196ff9 !important;
+}

@@ -45,7 +45,7 @@
 								<div class="card card-table">
 									
 									<div class="card-body">
-										<table class="table">
+										<table class="table table-bordered table-striped">
 											<thead>
 												<tr>
 													<th>Identifier</th>
@@ -72,7 +72,7 @@
 					</div>
 					<div class="tab-pane" id="Details" role="tabpanel">
 						<div class="row">
-							<div class="col-md-10">
+							<div class="col-md-4">
 								<p>Add your full business name, VAT number, or billing address here. This information will appear on all your invoices. <br>For your security, do not include any confidential or financial information (like credit card numbers).</p>
 								<textarea class="form-control"></textarea>
 								<br>

@@ -5,15 +5,22 @@ namespace App\Http\Controllers\Project;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Jobs\ProcessHost;
+
 class ProjectController extends Controller
 {
     public function new()
     {
-    	return view('application.index');
+    	return view('apps.new');
     }
 
-    public function lists()
+    public function detail()
     {
-    	
+    	return view('apps.detail');
+    }
+
+    public function store(Request $request)
+    {
+    	ProcessHost::dispatch();
     }
 }

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Project;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class RegisterController extends Controller
+class BackupController extends Controller
 {
     public function index()
     {
-    	return view('auth.register');
+    	return view('apps.backup');
     }
 }
