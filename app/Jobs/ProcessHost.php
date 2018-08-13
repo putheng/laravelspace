@@ -32,7 +32,7 @@ class ProcessHost implements ShouldQueue
      */
     public function handle()
     {
-        //$process = new Process('python3.6 /home/vagrant/sites/laravelspace/app/Jobs/setup.py');
-        //$process->run();
+        $process = new Process('python3.6 /home/vagrant/sites/laravelspace/app/Jobs/setup.py');
+        $process->run();
     }
 }

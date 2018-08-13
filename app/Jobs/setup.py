@@ -4,6 +4,8 @@ import os
 ## Clear the console.
 os.system("clear")
 
+os.system("cd ~")
+
 server_parent_dir = "/var/www/html"
 
 ## Domain directory
