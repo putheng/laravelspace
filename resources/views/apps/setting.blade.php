@@ -45,9 +45,10 @@
 								<div class="form-group pt-2">
 									<label for="php">PHP Version</label>
 									<select name="php_version" class="form-control">
-										<option value="6.5">6.5</option>
-										<option value="7.0">7.0</option>
 										<option value="7.2">7.2</option>
+										<option value="7.0">7.1</option>
+										<option value="7.0">7.0</option>
+										<option value="6.5">6.5</option>
 									</select>
 								</div>
 
@@ -59,19 +60,16 @@
 
 					<div class="tab-pane" id="config" role="tabpanel">
 						<h4>Config app environments</h4>
-						<br><br>
+						<br>
 						<div class="row">
-							<div class="col-md-3">
+							<div class="col-md-6">
 								<div class="form-group">
-									<input class="form-control form-control-sm" type="text" name="key" placeholder="KEY">
+<textarea class="form-control" rows="30">
+{{ file_get_contents('../.env') }}
+</textarea>
 								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="form-group">
-									<input class="form-control form-control-sm" type="text" name="key" placeholder="VALUE">
-								</div>
-							</div>
-							<div class="col-md-1">
+
+
 								<input type="submit" value="ADD" class="btn btn-primary">
 							</div>
 						</div>

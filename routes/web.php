@@ -29,6 +29,8 @@ Route::group(['prefix' => 'app', 'namespace' => 'Project', 'as' => 'app.'], func
 
 		Route::get('backup', 'BackupController@index')->name('backup');
 
+		Route::get('upgrade', 'SettingController@upgrade')->name('upgrade');
+		
 		Route::group(['prefix' => 'ssh'], function(){
 
 			Route::get('/', 'DeployController@index')->name('deploy');
@@ -37,7 +39,6 @@ Route::group(['prefix' => 'app', 'namespace' => 'Project', 'as' => 'app.'], func
 
 			Route::get('/view', 'DeployController@view')->name('ssh.view');
 		});
-
 		Route::group(['prefix' => 'ssl', 'as' => 'ssl.'], function(){
 
 			Route::get('/', 'CertificateController@index')->name('index');

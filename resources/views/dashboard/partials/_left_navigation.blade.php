@@ -47,7 +47,7 @@
 							<li>
 								<a href="{{ route('app.manage.deploy') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
-									<span>SSH</span>
+									<span>SSH Key</span>
 								</a>
 							</li>
 							<li>
@@ -60,6 +60,12 @@
 								<a href="{{ route('app.manage.setting') }}">
 									<i class="icon mdi mdi-chart-donut"></i>
 									<span>Application Settings</span>
+								</a>
+							</li>
+							<li>
+								<a href="{{ route('app.manage.upgrade') }}">
+									<i class="icon mdi mdi-chart-donut"></i>
+									<span>Upgrade</span>
 								</a>
 							</li>
 						@endif

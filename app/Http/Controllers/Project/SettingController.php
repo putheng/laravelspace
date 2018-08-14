@@ -11,4 +11,9 @@ class SettingController extends Controller
     {
     	return view('apps.setting');
     }
+
+    public function upgrade()
+    {
+    	return view('apps.upgrade');
+    }
 }
