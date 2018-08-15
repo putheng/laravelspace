@@ -21,9 +21,6 @@ class ProjectController extends Controller
 
     public function store(Request $request)
     {
-        $user = User::get();
-
-        dd($user);
-    	//ProcessHost::dispatch();
+    	ProcessHost::dispatch();
     }
 }
