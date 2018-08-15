@@ -44,3 +44,12 @@ os.system("sudo ln -s /etc/nginx/sites-available/"+domain_dir+" /etc/nginx/sites
 # Restart Nginx
 os.system("sudo service nginx restart")
 
+
+
+
+
+
+
+
+
+

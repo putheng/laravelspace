@@ -1,5 +1,11 @@
 <?php
 
+Route::get('/test', function(){
+
+	//DB::statement("CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'");
+
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
