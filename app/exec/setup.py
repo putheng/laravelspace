@@ -9,10 +9,10 @@ os.system("cd ~")
 server_parent_dir = "/var/www/html"
 
 ## Domain directory
-domain_dir = "/putheng_com"
+domain_dir = "/files299_com"
 
 ## Domain name
-domain = "putheng.com"
+domain = "files299.com"
 
 ## Chceck and set name of the public directory.
 public_dir = "/public"
