@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Project;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
 use App\Jobs\ProcessHost;
 
 class ProjectController extends Controller
@@ -21,6 +21,9 @@ class ProjectController extends Controller
 
     public function store(Request $request)
     {
-    	ProcessHost::dispatch();
+        $user = User::get();
+
+        dd($user);
+    	//ProcessHost::dispatch();
     }
 }
