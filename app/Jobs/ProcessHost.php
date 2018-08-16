@@ -20,9 +20,15 @@ class ProcessHost implements ShouldQueue
      *
      * @return void
      */
-    public function __construct()
+    public $name,
+            $description,
+            $app;
+
+    public function __construct($name, $description, $app)
     {
-        //
+        $this->name = $name;
+        $this->description = $description;
+        $this->app = $app;
     }
 
     /**
@@ -32,7 +38,7 @@ class ProcessHost implements ShouldQueue
      */
     public function handle()
     {
-        $process = new Process('python3.5 /var/www/html/default/app/exec/mysql.py');
+        $process = new Process("python3.5 /home/vagrant/sites/laravelspace/app/exec/mysql.py {$this->name} {$this->description} {$this->app}");
         $process->run();
     }
 }

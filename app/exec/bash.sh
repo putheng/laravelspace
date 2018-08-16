@@ -41,8 +41,8 @@ echo "Password:   $PASS"
 ## SELECT User FROM mysql.user;
 
 ## Drop User
-## DROP USER 'useridJ7F7Xd3GUJqxoO8b'@'localhost';
-## DROP USER 'useridJ7F7Xd3GUJqxoO8b'@'%';
+## DROP USER 'c8557ce4ca'@'localhost';
+## DROP USER 'c8557ce4ca'@'%';
 
 ## show databases;
 ## drop database name;

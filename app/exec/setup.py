@@ -1,6 +1,9 @@
 #!/usr/bin/env python3.6
 import os
 
+import sys
+#sys.argv[0]
+
 ## Clear the console.
 os.system("clear")
 
@@ -43,13 +46,3 @@ os.system("sudo ln -s /etc/nginx/sites-available/"+domain_dir+" /etc/nginx/sites
 
 # Restart Nginx
 os.system("sudo service nginx restart")
-
-
-
-
-
-
-
-
-
-
